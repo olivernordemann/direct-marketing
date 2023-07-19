@@ -1,0 +1,181 @@
+;Unnamed: 0;logit;linear;rf_clf;rf_regr;gtb_clf;gtb_regr;kpi;training_set_size
+0;0,0;models_features_without_prom/logit_model_10000.sav;models_features_without_prom/linear_model_10000.sav;models_features_without_prom/random_forest_clf_10000.sav;models_features_without_prom/random_forest_regr_10000.sav;models_features_without_prom/gradient_boosting_clf_10000.sav;models_features_without_prom/gradient_boosting_regr_10000.sav;filenames;10000
+1;1,0;models_features_without_prom/logit_model_8000.sav;models_features_without_prom/linear_model_8000.sav;models_features_without_prom/random_forest_clf_8000.sav;models_features_without_prom/random_forest_regr_8000.sav;models_features_without_prom/gradient_boosting_clf_8000.sav;models_features_without_prom/gradient_boosting_regr_8000.sav;filenames;8000
+2;2,0;models_features_without_prom/logit_model_6000.sav;models_features_without_prom/linear_model_6000.sav;models_features_without_prom/random_forest_clf_6000.sav;models_features_without_prom/random_forest_regr_6000.sav;models_features_without_prom/gradient_boosting_clf_6000.sav;models_features_without_prom/gradient_boosting_regr_6000.sav;filenames;6000
+3;3,0;models_features_without_prom/logit_model_5000.sav;models_features_without_prom/linear_model_5000.sav;models_features_without_prom/random_forest_clf_5000.sav;models_features_without_prom/random_forest_regr_5000.sav;models_features_without_prom/gradient_boosting_clf_5000.sav;models_features_without_prom/gradient_boosting_regr_5000.sav;filenames;5000
+4;4,0;models_features_without_prom/logit_model_4000.sav;models_features_without_prom/linear_model_4000.sav;models_features_without_prom/random_forest_clf_4000.sav;models_features_without_prom/random_forest_regr_4000.sav;models_features_without_prom/gradient_boosting_clf_4000.sav;models_features_without_prom/gradient_boosting_regr_4000.sav;filenames;4000
+5;5,0;models_features_without_prom/logit_model_3000.sav;models_features_without_prom/linear_model_3000.sav;models_features_without_prom/random_forest_clf_3000.sav;models_features_without_prom/random_forest_regr_3000.sav;models_features_without_prom/gradient_boosting_clf_3000.sav;models_features_without_prom/gradient_boosting_regr_3000.sav;filenames;3000
+6;6,0;models_features_without_prom/logit_model_2000.sav;models_features_without_prom/linear_model_2000.sav;models_features_without_prom/random_forest_clf_2000.sav;models_features_without_prom/random_forest_regr_2000.sav;models_features_without_prom/gradient_boosting_clf_2000.sav;models_features_without_prom/gradient_boosting_regr_2000.sav;filenames;2000
+7;7,0;models_features_without_prom/logit_model_1000.sav;models_features_without_prom/linear_model_1000.sav;models_features_without_prom/random_forest_clf_1000.sav;models_features_without_prom/random_forest_regr_1000.sav;models_features_without_prom/gradient_boosting_clf_1000.sav;models_features_without_prom/gradient_boosting_regr_1000.sav;filenames;1000
+8;8,0;models_features_without_prom/logit_model_500.sav;models_features_without_prom/linear_model_500.sav;models_features_without_prom/random_forest_clf_500.sav;models_features_without_prom/random_forest_regr_500.sav;models_features_without_prom/gradient_boosting_clf_500.sav;models_features_without_prom/gradient_boosting_regr_500.sav;filenames;500
+9;9,0;models_features_without_prom/logit_model_200.sav;models_features_without_prom/linear_model_200.sav;models_features_without_prom/random_forest_clf_200.sav;models_features_without_prom/random_forest_regr_200.sav;models_features_without_prom/gradient_boosting_clf_200.sav;models_features_without_prom/gradient_boosting_regr_200.sav;filenames;200
+10;10,0;models_features_without_prom/logit_model_100.sav;models_features_without_prom/linear_model_100.sav;models_features_without_prom/random_forest_clf_100.sav;models_features_without_prom/random_forest_regr_100.sav;models_features_without_prom/gradient_boosting_clf_100.sav;models_features_without_prom/gradient_boosting_regr_100.sav;filenames;100
+11;11,0;models_features_without_prom/logit_model_50.sav;models_features_without_prom/linear_model_50.sav;models_features_without_prom/random_forest_clf_50.sav;models_features_without_prom/random_forest_regr_50.sav;models_features_without_prom/gradient_boosting_clf_50.sav;models_features_without_prom/gradient_boosting_regr_50.sav;filenames;50
+accuracy;;0.6339;;0.6342;;0.6357;;accuracy;10000
+precision;;0.32831;;0.3747;;0.35818;;precision;10000
+recall;;0.60169;;0.58759;;0.59596;;recall;10000
+f1_score;;0.42482;;0.45759;;0.44744;;f1_score;10000
+Explained Variance;;0.4956;;0.57774;;0.59839;;Explained Variance;10000
+Mean Squared Error;;0.01641;;0.01375;;0.01307;;Mean Squared Error;10000
+Root Mean Squared Error;;0.12812;;0.11724;;0.11434;;Root Mean Squared Error;10000
+Mean Absolut Error;;0.10695;;0.08848;;0.08552;;Mean Absolut Error;10000
+R2;;0.49381;;0.5761;;0.59686;;R2;10000
+Explained Variance;;;0.68299;;0.78497;;0.77223;Explained Variance;10000
+Mean Squared Error;;;206.41042;;140.01347;;148.35274;Mean Squared Error;10000
+Root Mean Squared Error;;;14.36699;;11.83273;;12.18001;Root Mean Squared Error;10000
+Mean Absolut Error;;;11.48834;;9.5003;;9.80663;Mean Absolut Error;10000
+R2;;;0.68299;;0.78496;;0.77216;R2;10000
+accuracy;;0.6339;;0.6351;;0.6357;;accuracy;8000
+precision;;0.32831;;0.38441;;0.35818;;precision;8000
+recall;;0.60169;;0.58695;;0.59596;;recall;8000
+f1_score;;0.42482;;0.46456;;0.44744;;f1_score;8000
+Explained Variance;;0.49569;;0.56172;;0.59734;;Explained Variance;8000
+Mean Squared Error;;0.01637;;0.01422;;0.01307;;Mean Squared Error;8000
+Root Mean Squared Error;;0.12796;;0.11926;;0.11433;;Root Mean Squared Error;8000
+Mean Absolut Error;;0.10709;;0.09133;;0.08578;;Mean Absolut Error;8000
+R2;;0.49505;;0.56141;;0.59687;;R2;8000
+Explained Variance;;;0.68285;;0.78554;;0.77353;Explained Variance;8000
+Mean Squared Error;;;206.50546;;139.63708;;147.49284;Mean Squared Error;8000
+Root Mean Squared Error;;;14.3703;;11.81681;;12.14466;Root Mean Squared Error;8000
+Mean Absolut Error;;;11.50225;;9.52337;;9.77879;Mean Absolut Error;8000
+R2;;;0.68284;;0.78554;;0.77348;R2;8000
+accuracy;;0.6339;;0.6366;;0.6357;;accuracy;6000
+precision;;0.32831;;0.3679;;0.35818;;precision;6000
+recall;;0.60169;;0.59505;;0.59596;;recall;6000
+f1_score;;0.42482;;0.45468;;0.44744;;f1_score;6000
+Explained Variance;;0.49494;;0.5495;;0.59119;;Explained Variance;6000
+Mean Squared Error;;0.01642;;0.01464;;0.0133;;Mean Squared Error;6000
+Root Mean Squared Error;;0.12816;;0.12099;;0.11531;;Root Mean Squared Error;6000
+Mean Absolut Error;;0.10736;;0.09345;;0.08712;;Mean Absolut Error;6000
+R2;;0.4935;;0.54853;;0.58998;;R2;6000
+Explained Variance;;;0.68218;;0.77445;;0.76896;Explained Variance;6000
+Mean Squared Error;;;206.97029;;146.85901;;150.44122;Mean Squared Error;6000
+Root Mean Squared Error;;;14.38646;;12.11854;;12.26545;Root Mean Squared Error;6000
+Mean Absolut Error;;;11.51052;;9.72723;;9.85038;Mean Absolut Error;6000
+R2;;;0.68213;;0.77445;;0.76895;R2;6000
+accuracy;;0.6339;;0.6365;;0.6357;;accuracy;5000
+precision;;0.32831;;0.40554;;0.35818;;precision;5000
+recall;;0.60169;;0.58453;;0.59596;;recall;5000
+f1_score;;0.42482;;0.47885;;0.44744;;f1_score;5000
+Explained Variance;;0.49375;;0.51769;;0.58078;;Explained Variance;5000
+Mean Squared Error;;0.01644;;0.01566;;0.01362;;Mean Squared Error;5000
+Root Mean Squared Error;;0.12823;;0.12513;;0.11669;;Root Mean Squared Error;5000
+Mean Absolut Error;;0.10751;;0.09783;;0.08895;;Mean Absolut Error;5000
+R2;;0.49288;;0.51715;;0.58007;;R2;5000
+Explained Variance;;;0.68197;;0.77052;;0.76532;Explained Variance;5000
+Mean Squared Error;;;207.14444;;149.422;;152.81007;Mean Squared Error;5000
+Root Mean Squared Error;;;14.39251;;12.22383;;12.36164;Root Mean Squared Error;5000
+Mean Absolut Error;;;11.51736;;9.78927;;9.9267;Mean Absolut Error;5000
+R2;;;0.68186;;0.77051;;0.76531;R2;5000
+accuracy;;0.6339;;0.6313;;0.6366;;accuracy;4000
+precision;;0.32831;;0.40117;;0.37858;;precision;4000
+recall;;0.60169;;0.57501;;0.59188;;recall;4000
+f1_score;;0.42482;;0.47261;;0.46179;;f1_score;4000
+Explained Variance;;0.4904;;0.49651;;0.57735;;Explained Variance;4000
+Mean Squared Error;;0.01655;;0.01635;;0.01372;;Mean Squared Error;4000
+Root Mean Squared Error;;0.12863;;0.12785;;0.11714;;Root Mean Squared Error;4000
+Mean Absolut Error;;0.10777;;0.1006;;0.08878;;Mean Absolut Error;4000
+R2;;0.48973;;0.49592;;0.57685;;R2;4000
+Explained Variance;;;0.68204;;0.76731;;0.76077;Explained Variance;4000
+Mean Squared Error;;;207.14722;;151.51346;;155.76952;Mean Squared Error;4000
+Root Mean Squared Error;;;14.39261;;12.30908;;12.48077;Root Mean Squared Error;4000
+Mean Absolut Error;;;11.53237;;9.86283;;10.01267;Mean Absolut Error;4000
+R2;;;0.68186;;0.7673;;0.76076;R2;4000
+accuracy;;0.6339;;0.6241;;0.6373;;accuracy;3000
+precision;;0.32831;;0.44099;;0.40845;;precision;3000
+recall;;0.60169;;0.55484;;0.58545;;recall;3000
+f1_score;;0.42482;;0.49141;;0.48119;;f1_score;3000
+Explained Variance;;0.48771;;0.47862;;0.57351;;Explained Variance;3000
+Mean Squared Error;;0.01661;;0.01691;;0.01383;;Mean Squared Error;3000
+Root Mean Squared Error;;0.12889;;0.13004;;0.11761;;Root Mean Squared Error;3000
+Mean Absolut Error;;0.10799;;0.10349;;0.09142;;Mean Absolut Error;3000
+R2;;0.48767;;0.47852;;0.57347;;R2;3000
+Explained Variance;;;0.67903;;0.76189;;0.75718;Explained Variance;3000
+Mean Squared Error;;;209.04637;;155.04397;;158.15299;Mean Squared Error;3000
+Root Mean Squared Error;;;14.45844;;12.45167;;12.57589;Root Mean Squared Error;3000
+Mean Absolut Error;;;11.59716;;9.96671;;10.0781;Mean Absolut Error;3000
+R2;;;0.67894;;0.76188;;0.7571;R2;3000
+accuracy;;0.6345;;0.6179;;0.6361;;accuracy;2000
+precision;;0.31836;;0.41938;;0.41404;;precision;2000
+recall;;0.60723;;0.54704;;0.58171;;recall;2000
+f1_score;;0.41772;;0.47478;;0.48376;;f1_score;2000
+Explained Variance;;0.4835;;0.38655;;0.55154;;Explained Variance;2000
+Mean Squared Error;;0.01675;;0.01989;;0.01455;;Mean Squared Error;2000
+Root Mean Squared Error;;0.12942;;0.14105;;0.12061;;Root Mean Squared Error;2000
+Mean Absolut Error;;0.10896;;0.1132;;0.09585;;Mean Absolut Error;2000
+R2;;0.48346;;0.38649;;0.55141;;R2;2000
+Explained Variance;;;0.67944;;0.74728;;0.75051;Explained Variance;2000
+Mean Squared Error;;;208.9323;;164.63398;;162.53144;Mean Squared Error;2000
+Root Mean Squared Error;;;14.45449;;12.83098;;12.74878;Root Mean Squared Error;2000
+Mean Absolut Error;;;11.58081;;10.2572;;10.22481;Mean Absolut Error;2000
+R2;;;0.67912;;0.74715;;0.75038;R2;2000
+accuracy;;0.6313;;0.6165;;0.6239;;accuracy;1000
+precision;;0.35308;;0.40991;;0.40772;;precision;1000
+recall;;0.587;;0.54575;;0.55948;;recall;1000
+f1_score;;0.44094;;0.46817;;0.4717;;f1_score;1000
+Explained Variance;;0.48396;;0.28119;;0.44305;;Explained Variance;1000
+Mean Squared Error;;0.01701;;0.02351;;0.01836;;Mean Squared Error;1000
+Root Mean Squared Error;;0.13044;;0.15333;;0.13551;;Root Mean Squared Error;1000
+Mean Absolut Error;;0.11036;;0.12262;;0.10973;;Mean Absolut Error;1000
+R2;;0.47528;;0.27495;;0.43373;;R2;1000
+Explained Variance;;;0.67496;;0.71437;;0.71507;Explained Variance;1000
+Mean Squared Error;;;211.63972;;185.97611;;185.52504;Mean Squared Error;1000
+Root Mean Squared Error;;;14.54784;;13.63731;;13.62076;Root Mean Squared Error;1000
+Mean Absolut Error;;;11.67575;;10.81528;;10.92571;Mean Absolut Error;1000
+R2;;;0.67496;;0.71437;;0.71506;R2;1000
+accuracy;;0.6327;;0.6113;;0.6216;;accuracy;500
+precision;;0.30573;;0.34556;;0.33851;;precision;500
+recall;;0.60733;;0.54417;;0.56805;;recall;500
+f1_score;;0.40672;;0.42269;;0.42422;;f1_score;500
+Explained Variance;;0.482;;-0.10984;;0.35792;;Explained Variance;500
+Mean Squared Error;;0.01725;;0.03692;;0.02147;;Mean Squared Error;500
+Root Mean Squared Error;;0.13133;;0.19215;;0.14653;;Root Mean Squared Error;500
+Mean Absolut Error;;0.10813;;0.15475;;0.11897;;Mean Absolut Error;500
+R2;;0.46813;;-0.13868;;0.33789;;R2;500
+Explained Variance;;;0.67888;;0.70885;;0.7102;Explained Variance;500
+Mean Squared Error;;;211.09956;;190.34539;;189.6207;Mean Squared Error;500
+Root Mean Squared Error;;;14.52927;;13.79657;;13.77028;Root Mean Squared Error;500
+Mean Absolut Error;;;11.64532;;11.01503;;11.04209;Mean Absolut Error;500
+R2;;;0.67579;;0.70766;;0.70877;R2;500
+accuracy;;0.6173;;0.5771;;0.5946;;accuracy;200
+precision;;0.28558;;0.41282;;0.37057;;precision;200
+recall;;0.5706;;0.48419;;0.51071;;recall;200
+f1_score;;0.38064;;0.44567;;0.4295;;f1_score;200
+Explained Variance;;0.39569;;-1.21963;;-0.5069;;Explained Variance;200
+Mean Squared Error;;0.02096;;0.07293;;0.05031;;Mean Squared Error;200
+Root Mean Squared Error;;0.14476;;0.27006;;0.2243;;Root Mean Squared Error;200
+Mean Absolut Error;;0.12271;;0.22201;;0.18192;;Mean Absolut Error;200
+R2;;0.35373;;-1.24909;;-0.55158;;R2;200
+Explained Variance;;;0.63084;;0.67713;;0.61655;Explained Variance;200
+Mean Squared Error;;;241.99031;;210.23274;;249.7006;Mean Squared Error;200
+Root Mean Squared Error;;;15.55604;;14.4994;;15.80192;Root Mean Squared Error;200
+Mean Absolut Error;;;12.54602;;11.50375;;12.46271;Mean Absolut Error;200
+R2;;;0.62834;;0.67712;;0.6165;R2;200
+accuracy;;0.6173;;0.5771;;0.5946;;accuracy;100
+precision;;0.28558;;0.41282;;0.37057;;precision;100
+recall;;0.5706;;0.48419;;0.51071;;recall;100
+f1_score;;0.38064;;0.44567;;0.4295;;f1_score;100
+Explained Variance;;0.39569;;-1.15791;;-0.5069;;Explained Variance;100
+Mean Squared Error;;0.02096;;0.07131;;0.05031;;Mean Squared Error;100
+Root Mean Squared Error;;0.14476;;0.26704;;0.2243;;Root Mean Squared Error;100
+Mean Absolut Error;;0.12271;;0.21856;;0.18192;;Mean Absolut Error;100
+R2;;0.35373;;-1.1991;;-0.55158;;R2;100
+Explained Variance;;;0.63084;;0.6728;;0.61432;Explained Variance;100
+Mean Squared Error;;;241.99031;;213.07396;;251.1576;Mean Squared Error;100
+Root Mean Squared Error;;;15.55604;;14.59705;;15.84795;Root Mean Squared Error;100
+Mean Absolut Error;;;12.54602;;11.54159;;12.49045;Mean Absolut Error;100
+R2;;;0.62834;;0.67275;;0.61426;R2;100
+accuracy;;0.6173;;0.5857;;0.5946;;accuracy;50
+precision;;0.28558;;0.3832;;0.37057;;precision;50
+recall;;0.5706;;0.49607;;0.51071;;recall;50
+f1_score;;0.38064;;0.43239;;0.4295;;f1_score;50
+Explained Variance;;0.39569;;-1.09614;;-0.5069;;Explained Variance;50
+Mean Squared Error;;0.02096;;0.06877;;0.05031;;Mean Squared Error;50
+Root Mean Squared Error;;0.14476;;0.26224;;0.2243;;Root Mean Squared Error;50
+Mean Absolut Error;;0.12271;;0.21475;;0.18192;;Mean Absolut Error;50
+R2;;0.35373;;-1.12086;;-0.55158;;R2;50
+Explained Variance;;;0.63084;;0.67639;;0.61382;Explained Variance;50
+Mean Squared Error;;;241.99031;;210.80558;;251.4877;Mean Squared Error;50
+Root Mean Squared Error;;;15.55604;;14.51915;;15.85836;Root Mean Squared Error;50
+Mean Absolut Error;;;12.54602;;11.53087;;12.51013;Mean Absolut Error;50
+R2;;;0.62834;;0.67624;;0.61376;R2;50

@@ -1,0 +1,57 @@
+reset;
+
+option solver minos;
+
+param gamma := 0.995;    # Diskontfaktor
+
+param c integer;
+param filename symbolic; 
+
+set I := 0..1;
+
+# werden durch data cust_behaviour_ampl.dat gesetzt
+param P{w1 in I,w2 in I,w3 in I,a1 in I,a2 in I,a3 in I,w in I};  # Kaufwahrscheinlichkeiten 
+
+param R{w1 in I,w2 in I,w3 in I,a1 in I,a2 in I,a3 in I,w in I};  # Gewinn bei Einkauf
+
+data cust_behaviour_ampl.dat;
+
+model;
+
+# manuell Kosten einstellen!
+let c := 1;
+# Ausgabe des Kundenwertes bei entsprechendem Status
+let filename := 'cust_behaviour_dp/cust_behaviour_solver_solution_c' & c & '.csv';
+   
+var V{w1 in I,w2 in I,w3 in I,w4 in I,a1 in I,a2 in I,a3 in I,a4 in I} := 200;            # variables for value function
+
+subject to NB_V {w1 in I,w2 in I,w3 in I,w4 in I,a1 in I,a2 in I,a3 in I,a4 in I}:   
+V[w1,w2,w3,w4,a1,a2,a3,a4] = max {w in I} ( -c*w+ P[w1,w2,w3,a1,a2,a3,w] *(R[w1,w2,w3,a1,a2,a3,w] + gamma * V[w2,w3,w4,w,a2,a3,a4,1])
+                                    +(1-P[w1,w2,w3,a1,a2,a3,w])*                            gamma * V[w2,w3,w4,w,a2,a3,a4,0] );
+
+solve; 
+display V;
+display _solve_elapsed_time;
+end;
+
+param V_{w1 in I,w2 in I,w3 in I,a1 in I,a2 in I,a3 in I} default 0; 
+for {w1 in I,w2 in I,w3 in I,a1 in I,a2 in I,a3 in I} let V_[w1,w2,w3,a1,a2,a3] := V[w1,w2,w3,a1,a2,a3]; 	# save value function as parameter
+
+param aV{w1 in I,w2 in I,w3 in I,a1 in I,a2 in I,a3 in I} := 		    # arg max
+      max {w in I : 10^-6 > abs(V_[w1,w2,w3,a1,a2,a3] - ( -c*w+ P[w1,w2,w3,a1,a2,a3,w] *(R[w1,w2,w3,a1,a2,a3,w] + gamma * V_[w2,w3,w,a2,a3,1])
+                                                      +(1-P[w1,w2,w3,a1,a2,a3,w])*                            gamma * V_[w2,w3,w,a2,a3,0] ))} w;
+
+param Q{w1 in I,w2 in I,w3 in I,a1 in I,a2 in I,a3 in I,w in I} :=
+   -c*w+ P[w1,w2,w3,a1,a2,a3,w] *(R[w1,w2,w3,a1,a2,a3,w] + gamma * V_[w2,w3,w,a2,a3,1])
+   +(1-P[w1,w2,w3,a1,a2,a3,w])*                            gamma * V_[w2,w3,w,a2,a3,0];
+
+
+for {w1 in I,w2 in I,w3 in I,a1 in I,a2 in I,a3 in I}  {
+   printf"%i %i %i  %i %i %i  %6.3f %6.3f %6.3f %6.3f  %i  %6.3f  %6.3f  %6.3f  %6.3f \n", w1,w2,w3,a1,a2,a3, P[w1,w2,w3,a1,a2,a3, 1], P[w1,w2,w3,a1,a2,a3, 0], R[w1,w2,w3,a1,a2,a3, 1], R[w1,w2,w3,a1,a2,a3, 0], aV[w1,w2,w3,a1,a2,a3], V_[w1,w2,w3,a1,a2,a3], Q[w1,w2,w3,a1,a2,a3,1], Q[w1,w2,w3,a1,a2,a3,0], Q[w1,w2,w3,a1,a2,a3,1]- Q[w1,w2,w3,a1,a2,a3,0] 
+};
+printf"w1,w2,w3,a1,a2,a3,p_prom,p_no_prom,size_prom,size_no_prom,best_action,value,q_value_prom,q_value_no_prom,q_value_diff\n" > (filename);
+for {w1 in I,w2 in I,w3 in I,a1 in I,a2 in I,a3 in I}  {
+   printf"%i,%i,%i,%i,%i,%i,%5.3f,%5.3f,%6.3f,%6.3f,%i,%6.3f,%6.3f,%6.3f,%5.3f\n", w1,w2,w3,a1,a2,a3, P[w1,w2,w3,a1,a2,a3,1], P[w1,w2,w3,a1,a2,a3,0], R[w1,w2,w3,a1,a2,a3,1], R[w1,w2,w3,a1,a2,a3,0], aV[w1,w2,w3,a1,a2,a3], V_[w1,w2,w3,a1,a2,a3], Q[w1,w2,w3,a1,a2,a3,1], Q[w1,w2,w3,a1,a2,a3,0], Q[w1,w2,w3,a1,a2,a3,1]- Q[w1,w2,w3,a1,a2,a3,0]  >> (filename);
+};
+
+end;

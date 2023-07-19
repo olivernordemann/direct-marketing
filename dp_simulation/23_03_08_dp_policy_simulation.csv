@@ -1,0 +1,4 @@
+;models;proms_sent;buys;orders_sum;profit;exp_profit
+0;dp_policy;500;420;33984,4;12712,2;12205,1
+0;dp_policy;500;428;35476,9;13386,4;13076,5
+0;dp_policy;500;405;32987,9;12348,9;12024,2
